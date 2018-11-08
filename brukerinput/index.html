@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Brukerinput</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+    <h1>Registrer Film</h1>
 
+<div class="ip-div">
+    <b class="ip-title">Tittel:</b><br>
+    <input class="ip-box" type="text" placeholder="Filmens tittel">
+</div>
+
+<div class="ip-div">
+    <br>
+    <b class="ip-title">Årstall</b>
+    <br>
+    <input class="ip-box" type="number" placeholder="Aarstall">
+</div>
+
+<div class="ip-div">
+        <br>
+        <b class="ip-title">Beskrivelse</b>
+        <br>
+        <textarea class="ip-box" placeholder="Skriv en kort beskrivelse..."></textarea>
+</div>
+
+<div class="ip-div">
+    <br>
+    <b class="ip-title">Aldersgrense</b>
+    <br>
+    <select class="ip-title" name="Aldersgrense">
+        <option value="alle">Tillat for alle</option>
+        <option value="syv">7 år</option>
+        <option value="elleve">11 år</option>
+        <option value="femtem">15 år</option>
+        <option value="atten">18 år</option>
+    </select>
+</div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
