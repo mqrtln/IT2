@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #c1c1c1;
+}
+a{
+    color: black;
+    text-decoration: none;
+    text-align: center;  
+}
+p{
+    font-size: 30px; 
+    text-align: center;
+    margin-top: 100px;
+}
+a:hover{
+    color: gray;
+}
