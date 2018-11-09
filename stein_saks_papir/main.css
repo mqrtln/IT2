@@ -33,4 +33,21 @@ cursor: pointer;
     width: 205px; 
     height: 205px;
 }
+#navbar{
+    height: 15px; 
+    width: 100%; 
+    position: fixed;
+    bottom: 0;
+}
 
+.link{
+    position: relative;
+    bottom: 5px;
+    text-align: center;
+    color: black; 
+    margin-right: 30px;
+    margin-bottom: 3px;
+}
+.link:hover{
+    color: gray;
+}

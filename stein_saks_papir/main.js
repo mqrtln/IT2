@@ -58,14 +58,6 @@ function resetMachine(){
     machineEl.src ="bilder/machinechoice.png";
     infoEl.innerHTML = "Choose rock, paper or scissors. First to " + winnerScore + " points wins the game. "; 
 }
-function lostOrWon(){
-    if (playerChoice++){
-        infoEl.innerHTML = "You won that round, 1 point for you!"; 
-    } else{
-        infoEl.innerHTML = "You lost that round, 1 point to machine"; 
-    }
-}
-
 
 // Her beviser vi hvem som vinner basert på valgene spilleren tar
 if(playerChoice === machineChoice){
@@ -76,13 +68,13 @@ if(playerChoice === machineChoice){
 
 else if (playerChoice === "rock"){
     if(machineChoice === "scissors"){
-        playerChoice++;
-        lostOrWon();
+        playerScore++
+        infoEl.innerHTML = "You've won a point!"
         setTimeout(resetMachine, 1500);
 
     } else if (machineChoice === "paper"){
         machineScore++
-        lostOrWon();
+        infoEl.innerHTML = "You've lost a point!"
         setTimeout(resetMachine, 1500);
     }
 } 
@@ -90,24 +82,24 @@ else if (playerChoice === "rock"){
 else if (playerChoice === "scissors") {
     if (machineChoice === "paper") {
         playerScore++
-        lostOrWon();
+        infoEl.innerHTML = "You've won a point!"
         setTimeout(resetMachine, 1500);
 
     } else if (machineChoice === "rock"){
         machineScore++
-        lostOrWon();
+        infoEl.innerHTML = "You've lost a point!"
         setTimeout(resetMachine, 1500);
     }
 } 
     else if (playerChoice === "paper") {
         if (machineChoice === "rock") {
             playerScore++
-            lostOrWon();
+            infoEl.innerHTML = "You've won a point!"
             setTimeout(resetMachine, 1500);
         } else if (machineChoice === "scissors") {
             machineScore++
             setTimeout(resetMachine, 1500);
-            lostOrWon();
+            lose();
         }
     } 
 
