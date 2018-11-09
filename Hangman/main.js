@@ -1,3 +1,7 @@
+// Er ikke helt ferdig med hangman eller brukerskjema, finner ikke ut hvordan man kan lagre informasjon med javascript
+// og om det i det hele tatt går
+
+
 var canvas = document.querySelector("#myCanvas");
 var ctx = canvas.getContext("2d");
 
